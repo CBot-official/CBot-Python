@@ -45,8 +45,9 @@ def main():
             sendIRC('NICK ' + BotAlt )
 
         if 'PRIVMSG' in lline[1]:
-            if '!quit' in lline[3]:
-                sendIRC('QUIT')
+            if '!quit' in lline[3]:                
+                sendIRC('QUIT' + QuitMessage )
+                sys.exit()
             if '!join' in lline[3]:
                 sendIRC('JOIN ' + lline[4] )
             if '!part' in lline[3]:
