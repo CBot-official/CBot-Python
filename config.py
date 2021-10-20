@@ -50,6 +50,11 @@ BotRealName = "CBOT_TCLs_Little_Brother"
 BotServer = "IRC.irchighway.net"
 
 ###
+# Bot Quite Message
+##
+QuitMessage = 'Going off to die'
+
+###
 # Bot port.
 ##
 BotPort = 6667
