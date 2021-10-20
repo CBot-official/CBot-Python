@@ -1,4 +1,4 @@
-###############################################################################
+#################################################
 #    _____ ____        _   
 #   / ____|  _ \      | |                  
 #  | |    | |_) | ___ | |_ 
@@ -14,28 +14,49 @@
 
 ### Start of configuration ###
 
-## Bot nick.
-BNICK = "CBot"
-##-----------------------------------------------------------------------
-## Bot alter nick.
-BALT = "CBot-"
-##-----------------------------------------------------------------------
-## Bot ident.
-BIDENT = "CBot"
-##-----------------------------------------------------------------------
-## Bot realname.
-BREALNAME = "CBot"
-##-----------------------------------------------------------------------
-## Bot server.
-BSERVER = "irc.libera.chat"
-##-----------------------------------------------------------------------
-## Bot port.
-BPORT = 6667
-##-----------------------------------------------------------------------
-## Bot admin.
-BADMIN = "Your-nick"
-##-----------------------------------------------------------------------
-## Bot channel.
-BCHANNEL = "#CBot"
+###
+# For printing to screen.
+##
+DebugMode = True
+
+###
+# Bot's nick.
+##
+BotNick = "CBot_py"
+
+###
+# Bot's nick.
+##
+BotNick = "CBot_py"
+
+###
+# Bot's alter nick.
+##
+BotAlt = "TheRealCBot_py"
+
+###
+# Bot's ident.
+##
+BotIdent = "Genderless"
+
+###
+# Bot realname.
+##
+BotRealName = "CBOT_TCLs_Little_Brother"
+
+### 
+# Bot server.
+##
+BotServer = "IRC.irchighway.net"
+
+###
+# Bot port.
+##
+BotPort = 6667
+
+###
+# Bot channel.
+##
+BotHome = "#CBot"
 
 ### End of configuration ###
