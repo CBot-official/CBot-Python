@@ -15,42 +15,37 @@
 ### Start of configuration ###
 
 ###
-# For printing to screen.
-##
-DebugMode = True
-
-###
 # Bot's nick.
 ##
-BotNick = "CBot_py"
-
-###
-# Bot's nick.
-##
-BotNick = "CBot_py"
+BotNick = 'CBot_py'
 
 ###
 # Bot's alter nick.
 ##
-BotAlt = "TheRealCBot_py"
+BotAlt = 'TheRealCBot_py'
+
+###
+# Bot's nick password.
+##
+BotPassword = ''
 
 ###
 # Bot's ident.
 ##
-BotIdent = "Genderless"
+BotIdent = 'Genderless'
 
 ###
 # Bot realname.
 ##
-BotRealName = "CBOT_TCLs_Little_Brother"
+BotRealName = 'CBOT_TCLs_Little_Brother'
 
 ### 
 # Bot server.
 ##
-BotServer = "IRC.irchighway.net"
+BotServer = 'IRC.irchighway.net'
 
 ###
-# Bot Quite Message
+# Bot Quit Message
 ##
 QuitMessage = 'Going off to die'
 
@@ -62,6 +57,6 @@ BotPort = 6667
 ###
 # Bot channel.
 ##
-BotHome = "#CBot"
+BotHome = '#CBot'
 
 ### End of configuration ###
