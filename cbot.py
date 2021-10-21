@@ -7,27 +7,30 @@ import sys
 import string
 import time
 
+BotNick = "CBot"
+BotAlt = "CBot-"
+BotIdent = "CBot"
+BotRealname = "CBot"
+SERVER = "irc.irchighway.net"
+PORT = 6667
+
+
 sockChan = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+sockChan.connect((SERVER, PORT))
 
-sockChan.connect((BSERVER, BPORT))
-sockChan.send('NICK ' + BNICK + '\r\n'.encode('UTF-8'))
-sockChan.send('USER ' + BREALNAME +  ' * * :' + BIDENT + '\r\n'.encode('UTF-8'))
+def SendIRC (msg):
+  sockChan.send(bytes(f'{str(msg)} \r\n', 'UTF-8'))
+  
+SendIRC(f'USER {BotIdent} * * :{BotRealname}')
+SendIRC(f'NICK {BotNick}')
+connected = True
 
-while 1: 
-    line = sockChan.recv(2040)
-    print(line)
+while connected:
+  line = sockChan.recv(2040).decode('UTF-8')
+  print(line)
+  if line != "":
     lline = line.split()
     if 'PING' in lline[0]:
-        sockChan.send("PONG " + lline[1] + "\r\n")
-    if '001' in lline[1]:
-        sockChan.send("JOIN " + BCHANNEL + "\r\n")
-       # sockChan.send("PRIVMSG NICKSERV :IDENTIFY " + BPASSWORD + "\r\n")
+      SendIRC(f'PONG {lline[1]}')
     if '433' in lline[1]:
-        sockChan.send("NICK " + BALT + "\r\n")
-    if 'PRIVMSG' in lline[1]:
-      if '!quit' in lline[3]:
-         sockChan.send("QUIT \r\n")
-      if '!join' in lline[3]:
-        sockChan.send("JOIN " + lline[4] + "\r\n")
-      if '!part' in lline[3]:
-        sockChan.send("PART " + lline[4] + "\r\n")
+      SendIRC(f'NICK {BotAlt}')
