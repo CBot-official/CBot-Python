@@ -15,6 +15,16 @@
 ### Start of configuration ###
 
 ###
+# Turns on printing servercommunication on screen 
+##
+DebugMode = True
+
+###
+# Log file name for errors
+##
+LogFileName = 'Py_CBot'
+
+###
 # Bot's nick.
 ##
 BotNick = 'CBot_py'
