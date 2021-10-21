@@ -1,1 +1,1 @@
-python3 ./cbot.py &amp;
+python3 ./cbot.py &
