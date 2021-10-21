@@ -34,7 +34,7 @@ def sendIRC(msg):
 
 
 def sendmsg(msg, target=BotHome): # Sends messages to the target.
-    ircsend(f'PRIVMSG {target} :{msg}') 
+    sendIRC(f'PRIVMSG {target} :{msg}') 
 
 
 sendIRC(f'USER {BotIdent} * * :{BotRealName}') #Command: USER Parameters: <user> <mode> <unused> <realname>
