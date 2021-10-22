@@ -36,7 +36,7 @@ BotRealname = 'CBot-Python'
 ### 
 # Bot server.
 ##
-BotServer = 'IRC.irchighway.net'
+BotServer = 'irc.address.org'
 
 ###
 # Bot port.
