@@ -48,3 +48,5 @@ def main():
              host = zline[2]
              targ = zline[4]
              text = zline[5]
+             
+main()
