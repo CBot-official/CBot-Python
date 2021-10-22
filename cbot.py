@@ -19,9 +19,29 @@ while connected:
     lline = line.split()
     if 'PING' in lline[0]:
       SendIRC(f'PONG {lline[1]}')
-      
+ 
     if '433' in lline[0]:
       SendIRC(f'NICK {BotAlt}')
       
     if '001' in lline[0]:
       SendIRC(f'JOIN {BotHome}')
+    
+    if 'PRIVMSG' in lline[1]:
+      zline = lline.split('!')
+      zline = zline.split(':')
+      zline = zline.split('@')
+      nick = zline[0]
+      ident = zline[1]
+      host = zline[2]
+      targ = zline[4]
+      text = zline[5]
+      
+    if 'NOTICE' in lline[1]:
+      zline = lline.split('!')
+      zline = zline.split(':')
+      zline = zline.split('@')
+      nick = zline[0]
+      ident = zline[1]
+      host = zline[2]
+      targ = zline[4]
+      text = zline[5]
