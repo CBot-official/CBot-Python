@@ -29,23 +29,28 @@ BotAlt = 'CBot-Python-'
 BotIdent = 'CBot-Python'
 
 ###
-# Bot realname.
+# Bot's realname.
 ##
 BotRealname = 'CBot-Python'
 
 ### 
-# Bot server.
+# Bot's server.
 ##
 BotServer = 'irc.address.org'
 
 ###
-# Bot port.
+# Bot's port.
 ##
 BotPort = 6667
 
 ###
-# Bot channel.
+# Bot's home channel.
 ##
-BotHome = '#CBot'
+BotHome = '#CBot
+
+### Bot
+# Bot's Admin's nick.
+##
+BotAdmin = 'Your-nick'
 
 ### End of configuration ###
