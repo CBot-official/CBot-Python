@@ -7,66 +7,50 @@
 #   \_____|____/ \___/ \__|
 #
 #################################################
-# Description:
 #
-#
+# Python release. v0.1
 #################################################
 
 ### Start of configuration ###
 
 ###
-# Turns on printing servercommunication on screen 
-##
-DebugMode = True
-
-###
-# Log file name for errors
-##
-LogFileName = 'Py_CBot'
-
-###
 # Bot's nick.
 ##
-BotNick = 'CBot_py'
+BotNick = 'CBot-Python'
 
 ###
 # Bot's alter nick.
 ##
-BotAlt = 'TheRealCBot_py'
-
-###
-# Bot's nick password.
-##
-BotPassword = ''
+BotAlt = 'CBot-Python-'
 
 ###
 # Bot's ident.
 ##
-BotIdent = 'Genderless'
+BotIdent = 'CBot-Python'
 
 ###
-# Bot realname.
+# Bot's realname.
 ##
-BotRealName = 'CBOT_TCLs_Little_Brother'
+BotRealname = 'CBot-Python'
 
 ### 
-# Bot server.
+# Bot's server.
 ##
-BotServer = 'IRC.irchighway.net'
+BotServer = 'irc.address.org'
 
 ###
-# Bot Quit Message
-##
-QuitMessage = 'Going off to die'
-
-###
-# Bot port.
+# Bot's port.
 ##
 BotPort = 6667
 
 ###
-# Bot channel.
+# Bot's home channel.
 ##
-BotHome = '#CBot'
+BotHome = '#CBot
+
+### Bot
+# Bot's Admin's nick.
+##
+BotAdmin = 'Your-nick'
 
 ### End of configuration ###
