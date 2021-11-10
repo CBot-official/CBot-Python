@@ -5,7 +5,7 @@ sockChan = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sockChan.connect((BotServer, BotPort))
 
 def SendIRC (msg):
-  sockChan.sendall(bytes(f'{str(msg)} \r\n', 'UTF-8'))
+    sockChan.sendall(bytes(f'{str(msg)} \r\n', 'UTF-8'))
   
 SendIRC(f'USER {BotIdent} * * :{BotRealname}')
 SendIRC(f'NICK {BotNick}')
@@ -49,7 +49,7 @@ def main():
                 text = zline[5]
 
 
-    except: 
-        print('fuck it broke')         
+    except Exception as iconnex:
+            print(f'Exception: {str(iconnex)}')        
 
 main()
