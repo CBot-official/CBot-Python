@@ -46,7 +46,7 @@ BotPort = 6667
 ###
 # Bot's home channel.
 ##
-BotHome = '#CBot
+BotHome = '#CBot'
 
 ### Bot
 # Bot's Admin's nick.
